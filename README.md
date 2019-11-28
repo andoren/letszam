@@ -6,7 +6,7 @@
 A programot használó dolgozók adatait tartalmazza.
 Felhasználónév aminek a maximum mérete 45 karakterhosszú.
 Jelszó ami SHA1-ben lesz eltárolva.
-Teljese neve.
+A felhasználó teljes neve.
 
 ## Privilege
 A felhasználóknak a jogosultsági szintje a programban.
@@ -35,10 +35,10 @@ Ez maga az iktató könyv. Ha bejön egy irat vagy kimegy azt itt kell  ebben le
 * Szöveg: Ami az iktatásnak egy hosszabb leírása ha szükséges, de általában csak a tárgy lesz megadva meg a beszkennelt dokumentum hozzá.
 * Hivszám: Ez akkor fordulhat elő ha egy beérkező dokumentumot iktatunk és annak van hivatkozási vagy iktatási száma.
 * Ügyintező: Ez a szervezeten belüli dolgozó kollégára utal, hogy ezt az ügyet vagy iratot ki intézi. 
-* Partner: Például E-on, vagy Polgármester vagy Járás stb... . Aki küldi ezt az iratot. Lehet null mivel ha mi küldunk iratot akkor nincs Partner. Ide lehet a partnerugyintezokapcsolot fogom becsatolni miután adok neki egy primary key id-t.
-* Csoport: Iratok tipusait jelöli. Pl.: Ellátotti irtatok, Főzőkonyha, Munkaügy stb...
+* Partner: Az a személy, intézmény vagy cég aki külde az iratot. Munkaszerződéseknél a partner a dolgozó nevét jelöli. Lehet például E-on, Járási hivatal....  Ide a partnerugyintezokapcsolot fogom becsatolni miután adok neki egy primary key id-t.
+* Csoport: Az iratok azon típusait jelöli, amely egységhez kapcsolódik az iktatandó anyag. Például Ellátotti, Főzőkonyha, Munkaügy.
 * Telephely: Jelöli, hogy melyik telephelyhez tartozik az iktatás.
-* Jelleg: Az irat az levél, fax, e-mail küldemény, munkaügyi irat stb...
+* Jelleg: A dokumentum formai megjelenésének megadása. Ez lehet e-mail, küldemény, fax, levél, munkaügyi irat.
 * Iránya: Az irat az bejövö vagy kimenő volt-e.
 * Érkezett: Az irat érkezésének a dátuma vagy ha kimenő akkor a kimenetének a dátuma.
 * Hatidő: Meddig kell az iratra reagálni a lejárathoz közel a programban jelezni fogjuk.
